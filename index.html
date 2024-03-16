@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body{
             background-color: white;
@@ -11,11 +12,61 @@
         .main{
             color: red;
         }
+        .checked{
+            color:orange;
+        }
     </style>
 </head>
 <body>
-    <div class="heading">
-        <b>Name</b><span class="main">*</span>
+
+
+    <div class="container">
+        <h1>Survey Form</h1>
+     <form>
+
+        
+        <div class="name">
+            <label for="first-name"><b>Name</b><span class="main">*</span> <br>First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+        </div>
+      <br>
+            <div class="email">
+                <label for="email"><b>Email</b><span class="main">*</span></label><br>
+                <input type="text" id="email" name="email" size= 50px required>
+            </div>
+       
+
+        <div class="exp">
+            <h4>Your Experience<span class="main">*</span></h4>
+            <p>Overall, how would you rate your experience with us?</p>
+            <div class ="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                 <span class="fa fa-star checked"></span>
+            </div>
+        </div>
+           
+        <h4>How satisfied are you with<span class="main">*</span></h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Very UnSatisfied</th>
+                    <th>Unsatisfied</th>
+                    <th>Netural</th>
+                    <th>satisfied</th>
+                    <th>Very Satisfied</th>
+                </tr>
+            </thead>
+        </table>
+
+
+     </form>
     </div>
 </body>
 </html>
+
+
